@@ -1,0 +1,68 @@
+:root {
+    --page--bg-color: #1b4332;
+    --navbar--bg-color: #2d6a4f;
+    --footer-bg-color: #2d6a4f;
+    --element-bg-color: #2d6a4f;
+    --element-font-color: #d8f3dc;
+    --elemtnt-font-hover-color: #52b788;
+
+    --padding-one: 20px;
+    --padding-two: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+.content {
+    padding-bottom: 90px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body {
+    background-color: var(--page--bg-color);
+    color: var(--element-font-color);
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    border-top: 3px solid var(--elemtnt-font-hover-color);
+}
+
+.navbar {
+    color: var(--element-font-color);
+    background-color: var(--navbar--bg-color);
+    border-bottom: 3px solid var(--elemtnt-font-hover-color);
+}
+
+.card {
+    background-color: var(--element-bg-color);
+    border: 3px solid var(--elemtnt-font-hover-color);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
