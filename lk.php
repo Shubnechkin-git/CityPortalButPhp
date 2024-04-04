@@ -69,9 +69,9 @@ if (isset($_SESSION['login'])) {
 
                 // цикл foreach для вывода каждой задачи
                 foreach ($tasks as $task) {
-                    echo '<div class="col-md-4" id="' . $task['id'] . '">';
-                    echo '<div class="card mb-4">';
-                    echo '<div class="card-body">';
+                    echo '<div class="col-md-4 mb-4" id="' . $task['id'] . '">';
+                    echo '<div class="card mb-4 h-100">';
+                    echo '<div class="card-body d-flex flex-column justify-content-around">';
                     echo '<h4 class="card-title">Навзвание: ' . $task['title'] . '</h4>';
                     echo '<h6 class="card-subtitle mb-2">Категория: ' . $task['category'] . '</h6>';
                     echo '<h6 class="card-text">Описание: ' . $task['description'] . '</h6>';
